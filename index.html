@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2 Base</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="nav"> <!--menu systtm-->
+        <button id="hamIcon">Menu</button>
+        <p>Immanuel Ng</p>
+        <button id="page1btn">Home</button>
+        <button id="page2btn">About</button>
+        <button id="page3btn">Gallery</button>
+
+    </nav>
+    <div id="pagecontainer">
+        <div class="page" id="page1">
+            <div class="container">
+                <h1>Event Horizon Explorer</h1>
+                <p>Journey to the edge of space-time and witness the awesome power of a supermassive black hole.</p>
+            </div>
+
+            <div class="blackhole"></div>
+            <div class="accretion-disk"></div>
+        </div>
+        <div class="page" id="page2">
+            <div class="content">
+                <h2>The Science Behind Black Holes</h2>
+                <p>Black holes are among the most fascinating and mysterious objects in the universe. They are regions
+                    of space where gravity is so strong that nothing, not even light, can escape from them. This
+                    property gives rise to the term "black" hole, as they are invisible to direct observation.</p>
+
+                <div class="image-container">
+                    <img src="../Images/Home/Blackholeillustrate.jpg"
+                        alt="Artist's illustration of a black hole" width="600" height="400">
+                </div>
+
+                <h2>Formation of Black Holes</h2>
+                <p>Black holes can form in several ways, but the most common is through the death of massive stars. When
+                    a star with more than about 20 times the mass of our Sun runs out of fuel, it collapses under its
+                    own gravity. This collapse can be so extreme that it forms a black hole.</p>
+
+                <div class="scientist-quote">
+                    "The most massive stars are the shortest lived. It's like a cosmic version of 'Live fast, die
+                    young.'" - Dr. Janna Levin, Theoretical Physicist
+                </div>
+
+                <h2>Structure of a Black Hole</h2>
+                <p>A black hole consists of three main parts:</p>
+                <ul>
+                    <li><strong>The event horizon:</strong> This is the boundary beyond which nothing can escape the
+                        black hole's gravitational pull.</li>
+                    <li><strong>The singularity:</strong> This is the center of the black hole where matter is crushed
+                        to infinite density and zero volume.</li>
+                    <li><strong>The accretion disk:</strong> This is a disk of gas and dust that orbits the black hole,
+                        heated to extreme temperatures by friction and gravity.</li>
+                </ul>
+
+                <div class="fun-fact">
+                    <h3>Fun Fact: Spaghettification</h3>
+                    <p>If you were to fall into a black hole, the difference in gravitational force between your head
+                        and feet would stretch you out like a piece of spaghetti, a process whimsically called
+                        "spaghettification" by scientists.</p>
+                </div>
+
+                <h2>Recent Discoveries</h2>
+                <p>In 2019, the Event Horizon Telescope collaboration released the first-ever image of a black hole,
+                    specifically the supermassive black hole at the center of the galaxy M87. This groundbreaking
+                    achievement has opened up new avenues for studying these cosmic enigmas.</p>
+
+                <div class="image-container">
+                    <img src="../Images/Home/firstblackhole.jpg" alt="First image of a black hole (M87)"
+                        width="600" height="400">
+                </div>
+
+                <h2>The Future of Black Hole Research</h2>
+                <p>As our understanding of black holes grows, so do the questions we have about them. Future research
+                    aims to uncover more about the nature of singularities, the information paradox, and the role of
+                    black holes in galaxy formation and evolution.</p>
+
+                <div class="scientist-quote">
+                    "Black holes provide a laboratory for studying the most extreme conditions in the universe. They
+                    continue to challenge our understanding of physics and push us to new frontiers of knowledge." - Dr.
+                    Kip Thorne, Nobel Laureate in Physics
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page3">
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="../Images/Home/firstblackhole.jpg" alt="M87 Black Hole" width="400"
+                        height="300">
+                    <div class="gallery-caption">M87 Black Hole - First Ever Image</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../Images/Home/BlackHole.jpg" alt="Black Hole Simulation"
+                        width="400" height="300">
+                    <div class="gallery-caption">Computer Simulation of a Black Hole</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../Images/Home/Blackholeillustrate.jpg" alt="Artist's Impression"
+                        width="400" height="300">
+                    <div class="gallery-caption">Artist's Impression of a Black Hole</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../Images/Home/xray.jpg" alt="X-ray Image" width="400"
+                        height="300">
+                    <div class="gallery-caption">X-ray Image of a Black Hole</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../Images/Home/Merge.jpg" alt="Black Hole Merger" width="400"
+                        height="300">
+                    <div class="gallery-caption">Simulation of Black Hole Merger</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../Images/Home/Sagit.jpg" alt="Sagittarius A*" width="400"
+                        height="300">
+                    <div class="gallery-caption">Sagittarius A* - Milky Way's Central Black Hole</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../Images/Home/Quasar.jpg" alt="Quasar" width="400" height="300">
+                    <div class="gallery-caption">Quasar Powered by Supermassive Black Hole</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../Images/Home/disk.jpg" alt="Accretion Disk" width="400"
+                        height="300">
+                    <div class="gallery-caption">Black Hole Accretion Disk</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    </div>
+    </div>
+</body>
+<footer>
+    <nav class="nav"> <!--menu systtm-->
+        <button id="hamIcon">Menu</button>
+        <p>Quick navigation</p>
+        <button id="page1btn2">Home</button>
+        <button id="page2btn2">About</button>
+        <button id="page3btn2">Gallery</button>
+
+    </nav>
+</footer>
+</html>
